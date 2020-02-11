@@ -1,12 +1,24 @@
 /* Style the form */
 #regForm {
-    background-color: #ffffff;
+    background-color: #001489;
     margin: 100px auto;
     padding: 40px;
     width: 70%;
     min-width: 300px;
   }
-  
+  body {
+    background-color: #ffbf00;
+  }
+  button {
+    
+  }
+  .flex-container {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .flex-item {
+
+  }
   /* Style the input fields */
   input {
     padding: 10px;
@@ -28,12 +40,12 @@
   
   /* Make circles that indicate the steps of the form: */
   .step {
-    height: 15px;
-    width: 15px;
+    height: 70px;
+    width: 200px;
     margin: 0 2px;
-    background-color: #bbbbbb;
+    background-color:#ffbf00;
     border: none;
-    border-radius: 50%;
+    border-radius: 10px;
     display: inline-block;
     opacity: 0.5;
   }

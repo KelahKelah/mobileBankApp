@@ -1,38 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta name>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0">
+ 
         <title>Form wizard project </title>
 
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+      <h1>Learnable Application</h1>
         <form id="regForm" action="">
 
-            <h1>Register:</h1>
-            
-            <!-- One "tab" for each step in the form: -->
-            <div class="tab">Name:
+          <!-- Circles which indicates the steps of the form: -->
+          <div style="text-align:center;margin-top:1%;">
+            <span class="step">Personal</span>
+            <span class="step">Education</span>
+            <span class="step">IQ Test</span>
+            <span class="step">Social</span>
+          </div>
+           
+        <div class="flex-container">
+          <!-- One "tab" for each step in the form: -->
+
+          <div class="flex-item">
+            <div class="tab">
+              <h1>Personal Data</h1>
               <p><input placeholder="First name..." oninput="this.className = ''"></p>
               <p><input placeholder="Last name..." oninput="this.className = ''"></p>
-            </div>
-            
-            <div class="tab">Contact Info:
               <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
               <p><input placeholder="Phone..." oninput="this.className = ''"></p>
-            </div>
+              <p><input placeholder="Sex..." oninput="this.className = ''"></p>
+              <p><input placeholder="Sex..." oninput="this.className = ''"></p>
             
-            <div class="tab">Birthday:
+            </div>
+          </div>
+            
+          <div class="flex-item">
+            <div class="tab">
+              <h1>Education</h1>
+              <p><input placeholder="University" oninput="this.className = ''"></p>
+              <p><input placeholder="Course Studied..." oninput="this.className = ''"></p>
+              <p><input placeholder="Year of Admission..." oninput="this.className = ''"></p>
+              <p><input placeholder="Year of Graduation..." oninput="this.className = ''"></p>
+            </div>
+          </div>
+            
+          <div class="flex-item">
+            <div class="tab">
+              <h1>IQ test</h1>
               <p><input placeholder="dd" oninput="this.className = ''"></p>
               <p><input placeholder="mm" oninput="this.className = ''"></p>
               <p><input placeholder="yyyy" oninput="this.className = ''"></p>
             </div>
-            
-            <div class="tab">Login Info:
+          </div>
+          
+          <div class="flex-item">
+            <div class="tab">
+              <h1>Social Media</h1>
               <p><input placeholder="Username..." oninput="this.className = ''"></p>
               <p><input placeholder="Password..." oninput="this.className = ''"></p>
             </div>
-            
+          </div>
+
+        
             <div style="overflow:auto;">
               <div style="float:right;">
                 <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
@@ -40,17 +71,9 @@
               </div>
             </div>
             
-            <!-- Circles which indicates the steps of the form: -->
-            <div style="text-align:center;margin-top:40px;">
-              <span class="step"></span>
-              <span class="step"></span>
-              <span class="step"></span>
-              <span class="step"></span>
-            </div>
-            
             </form>
 
-            <script src="index.js"></script>
+          <script src="index.js"></script>
     </body>
 </html>
 
