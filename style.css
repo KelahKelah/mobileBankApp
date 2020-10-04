@@ -1,3 +1,7 @@
+.custom-wrapper {
+    background-color: #ffbf00;
+}
+/* WELCOME PAGE STYLE START  */
 .welcome-header {
     font-size: 5em;
     font-weight: 500;
@@ -7,5 +11,35 @@
     background-image: url('/assests/images/welcomeMobile.jpg');
     background-size: cover;
     background-position: center;
-    /* background-repeat: no-repeat; */
 }
+/* WELCOME PAGE STYLE ENDS  */
+
+/* AUTH STYLE STARTS */
+.login-wrap {
+    background-color: #ffbf00;
+    width: 100vw;
+    height: 100vh;
+}
+.login-container {
+    width: 21%;
+    height: 75%;
+    background-color: black;
+    border-radius: 25px;
+}
+.form-container {
+    width: 80%;
+    height: 80%;
+    margin: auto;    
+}
+.sign-up-btn, .log-in-btn {
+    border: solid 2px black;
+}
+.input-field {
+    background-color: #666;
+    border-style: none;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 1.2em;
+    color:blue !important;
+}
+/* AUTH STYLE ENDS */
