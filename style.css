@@ -1,10 +1,25 @@
 .custom-wrapper {
     background-color: #ffbf00;
 }
+.custom-index-row {
+    display: flex;
+    align-items: center;
+}
 /* WELCOME PAGE STYLE START  */
 .welcome-header {
-    font-size: 5em;
     font-weight: 500;
+    text-shadow: 5px 4px 10px #333;
+    cursor: pointer;
+	font-size: calc(1em + 10vw) ;  
+	text-shadow: -0.0075em 0.0075em 0 mix(#fff, #333, 94%),
+}
+.welcome-header:hover {
+}
+.welcome-sub-text {
+    font-weight: 300;
+    font-size: calc(0.9em + 3vw);
+    color: #333;
+    text-shadow: 5px 4px 10px #333;
 }
 .welcomeImg {
     height: 100vh;
@@ -24,22 +39,34 @@
     width: 21%;
     height: 75%;
     background-color: black;
-    border-radius: 25px;
+    border-radius: 1.25rem !important;
+}
+.content-wrap {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 .form-container {
-    width: 80%;
-    height: 80%;
     margin: auto;    
 }
 .sign-up-btn, .log-in-btn {
-    border: solid 2px black;
+    border: solid 2px #404040;
+    background-color: #404040;
+    border-radius: 1.25rem;
+    color: #fff !important;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-decoration: none !important;
 }
 .input-field {
-    background-color: #666;
+    background-color: #404040;
     border-style: none;
-    border-radius: 15px;
+    border-radius: 1.25rem;
     width: 100%;
     font-size: 1.2em;
-    color:blue !important;
+}
+.custom-auth-btn {
+    border-radius: 1.25rem !important;
 }
 /* AUTH STYLE ENDS */
