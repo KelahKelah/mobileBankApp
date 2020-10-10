@@ -14,27 +14,27 @@
         <div class="login-wrap  d-flex justify-content-center;">
             <div class="login-container m-auto">
                 <div class="content-wrap">
-                    <form class="form-container" onSubmit={handleSubmit}>
+                    <form class="form-container">
                         <div class="form-group">
-                            <input type="text" class="input-field p-2 my-2" id="fullName"  placeholder="Enter Full name" />
+                            <input type="text" class="input-field p-2 my-2" id="fullName"  name="fullName" placeholder="Enter Full name" />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="input-field p-2 my-2" id="email"  placeholder="Enter Email"  />
+                            <input type="text" class="input-field p-2 my-2" id="email"  name="email" placeholder="Enter Email"  />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="input-field p-2 my-2" id="number"  placeholder="Enter Number" />
+                            <input type="text" class="input-field p-2 my-2" id="number"  name="number" placeholder="Enter Number" />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="input-field p-2 my-2" id="username"  placeholder="Enter username" />
+                            <input type="text" class="input-field p-2 my-2" id="username"  name="username" placeholder="Enter username" />
                         </div>
                         <div class="form-group">
-                            <input type="password" class="input-field p-2 my-2" id="password"  placeholder="Enter Password" autocomplete="off" />
+                            <input type="password" class="input-field p-2 my-2" id="password"  name="password" placeholder="Enter Password" autocomplete="off" />
                         </div>
                         <div class="form-group">
-                            <input type="password" class="input-field p-2 my-2" id="confirm-password"  placeholder="Confirm Password" autocomplete="off" />
+                            <input type="password" class="input-field p-2 my-2" id="confirm-password"  name="confirm-password" placeholder="Confirm Password" autocomplete="off" />
                         </div>
                         <div class="d-inline-block w-100">
-                            <button type="button" class="btn btn-warning float-right custom-auth-btn" onclick="myAuth.register()">Sign up </button>
+                            <button type="button" class="btn btn-warning float-right custom-auth-btn" onclick="register()">Sign up </button>
                         </div>
                     </form>
                 </div>

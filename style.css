@@ -14,6 +14,7 @@
 	text-shadow: -0.0075em 0.0075em 0 mix(#fff, #333, 94%),
 }
 .welcome-header:hover {
+    
 }
 .welcome-sub-text {
     font-weight: 300;
@@ -41,7 +42,7 @@
     background-color: black;
     border-radius: 1.25rem !important;
 }
-.content-wrap {
+.login-content-wrap {
     height: 100%;
     width: 100%;
     display: flex;
@@ -58,6 +59,10 @@
     font-size: 1.5em;
     font-weight: 500;
     text-decoration: none !important;
+    margin-left: 15px;
+}
+.sign-up-btn:hover, .log-in-btn:hover {
+    background-color: transparent;
 }
 .input-field {
     background-color: #404040;
@@ -70,3 +75,65 @@
     border-radius: 1.25rem !important;
 }
 /* AUTH STYLE ENDS */
+
+/* TRANSACTION STYLE  */
+.transaction-wrap {
+    background-color: #ffbf00;
+    width: 100vw;
+    height: 100vh;
+}
+.transaction-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.transaction-content {
+    width: 21%;
+    height: 75%;
+    margin: auto;
+    background-color: black;
+    border-radius: 1.25rem !important;
+}
+.Total-balance {
+    color: #fff;
+    text-align: center;
+}
+.custom-btn-group {
+    text-align: center;
+    
+
+}
+.custom-btn-parent {
+    border-radius: 1.25rem;
+    border-style: none;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+}
+ .custom-btn-child {
+    border-radius: 1.25rem;
+    border-style: none;
+    background-color: #404040;
+    /* background-color: burlywood; */
+    color: #fff;
+    width: 90px;
+    height: 25px;
+}
+.custom-graph-card {
+    text-align: center;
+    background-color: #404040;
+    color: #fff;
+    width: 90%;
+    margin: auto;
+}
+.custom-balance {
+    background-color: #ffbf00;
+    width: 95%;
+    margin: auto;
+    border-radius: 1.25rem;
+    font-weight: 700;
+}
+.balance-item {
+    text-align: center;
+    /* background-color: yellowgreen; */
+}
