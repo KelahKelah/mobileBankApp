@@ -8,44 +8,57 @@
         <link rel="stylesheet" href="../style.css">
         <!-- BOOTSRAP CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    
     </head>
     <body>
         <div class="transaction-wrap">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
             <div class="transaction-container">
                 <div class="transaction-content">
                     <div class="Total-balance"> 
-                        <p>Kelechi</p>
-                        <label>Total Balance</label>
-                        <p>N500,000</p>
+                        <p class="customer-name">Kelechi</p>
+                        <ion-icon name="pulse-sharp" class="custom-graph-icon"></ion-icon>
+                        <label class="total-balance-write-up">Total Balance</label>
+                        <p class="total-amount">N500,000</p>
                     </div>
-                    <div class="custom-btn-group">
+                    <div class="custom-btn-group py-3">
                         <button type="button" class="custom-btn-parent">Card</button>
-                        <button type="button" class="custom-btn-child py-2"></button>
+                        <button type="button" class="custom-btn-child py-2.5"></button>
                     </div>
                     <div class="custom-graph-card">
-                        <h3>Weekly transaction chart</h3>
+                        <h6>Weekly transaction chart</h6>
                         <p>Amount</p>
                     </div>
-                    <div class="custom-balance">
-                        <div class="d-flex balance-item">
-                            <i>Icon</i>
-                            <p>Product</p>
-                            <p>2000</p>
-                        </div>
-                        <div class="d-flex balance-item">
-                            <i>Icon</i>
-                            <p>Product</p>
-                            <p>2000</p>
-                        </div>
-                        <div class="d-flex balance-item">
-                            <i>Icon</i>
-                            <p>Product</p>
-                            <p>2000</p>
-                        </div>
+
+                    <table class="custom-table">
+                        <tbody class='custom-balance' id='balance-container'>
+                            <!-- <tr class="balance-item" id='custom-tr'>
+                                <td><i class="mx-2 channel">e-channel</i></td>
+                                <td><p class="mx-2">Product</p></td>
+                                <td><p>2000</p></td>
+                                <td><p>Sept 26, 10:34</p></td>
+                            </tr> -->
+                            <!-- <tr class="balance-item">
+                                <td><i class="mx-2 channel">e-channel</i></td>
+                                <td><p class="mx-2">Product</p></td>
+                                <td><p>2000</p></td>
+                                <td><p>Sept 26, 10:34</p></td>
+                            </tr>
+                            <tr class="balance-item">
+                                <td><i class="mx-2 channel">e-channel</i></td>
+                                <td><p class="mx-2">Product</p></td>
+                                <td><p>2000</p></td>
+                                <td><p>Sept 26, 10:34</p></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- ion icon  -->
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+        <!-- external js file -->
         <script src="transaction.js"></script>
     </body>
 </html>
