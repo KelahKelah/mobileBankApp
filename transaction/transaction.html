@@ -2,17 +2,53 @@
 <html>
     <head>
         <meta name>
-        <title>transaction page</title>
+        <title>Transaction page</title>
+        <!-- <script src="signUp.js"></script> -->
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
         <!-- BOOTSRAP CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    
     </head>
     <body>
-        <div class="custom-transaction-container ">
-           <p>I am transaction page</p>
+        <div class="transaction-wrap">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+            <div class="transaction-container">
+                <div class="transaction-content">
+                    <div class="Total-balance"> 
+                        <p class="customer-name">Kelechi</p>
+                        <ion-icon name="pulse-sharp" class="custom-graph-icon"></ion-icon>
+                        <label class="total-balance-write-up">Total Balance</label>
+                        <p class="total-amount">N500,000</p>
+                    </div>
+                    <div class="custom-btn-group py-3">
+                        <button type="button" class="custom-btn-parent">Card</button>
+                        <button type="button" class="custom-btn-child py-2.5"></button>
+                    </div>
+
+                    <div class="custom-graph-card">
+                        <div class="line-chart">Weekly chart
+                            <div class="line"></div>
+                        </div>
+                        <div class="circle-chart">Dialy chart
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <table class="custom-table">
+                        <tbody class='custom-balance' id='balance-container'>
+                    <!-- RENDERING TRASACTION HERE  -->
+                        </tbody>
+                    </table>
+
+                    <button type='dafault' class="btn btn-warning">Something</button>
+                    </div>
+                </div>
+            </div>
         </div>
-            <script src="transaction.js"></script>
+        <!-- ion icon  -->
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+        <!-- external js file -->
+        <script src="transaction.js"></script>
     </body>
 </html>
-
