@@ -9,12 +9,14 @@
         <!-- BOOTSRAP CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-
-
     </head>
     <body>
+        <noscript>Sorry you need to enable javascript to run this application</noscript>
         <div class="login-wrap d-flex justify-content-center;">
             <div class="login-container m-auto">
+                <h4 class="greeting-text">Welcome back Kelechi!</h4>
+                <h5 class="greeting-text">Already signed up?</h5>
+                <h5 class="greeting-text">Login</h5>
                 <div class="login-content-wrap">
                     <form class="form-container">
                         <div class="form-group">
@@ -23,6 +25,7 @@
                         <div class="form-group">
                             <input type="text" id="password" placeholder="Enter password" class="input-field p-2 my-4" />
                         </div>
+                        <a href="#">Forgot password?</a>
                         <div class="d-inline-block w-100">
                             <button type="button" class="btn btn-warning float-right custom-auth-btn" onclick="login()">Login </button>
                         </div>
@@ -31,7 +34,6 @@
             </div>
         </div>
         <script src="auth.js"></script>
-
     </body>
 </html>
 
