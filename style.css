@@ -34,32 +34,57 @@ body {
 /* WELCOME PAGE STYLE ENDS  */
 
 /* AUTH STYLE STARTS */
+/* LOGIN  */
 .login-wrap {
     background-color: #ffbf00;
     width: 100vw;
     height: 100vh;
 }
 .login-container {
-    background-image: url('');
     width: 21%;
     height: 75%;
     background-color: black;
     border-radius: 1.25rem !important;
 }
 .login-content-wrap {
-    height: 100%;
     width: 100%;
+    background-color: blue;
+}
+.login-form-container {
+    margin: auto;    
+    background-color: tomato;
+    width: 90%;
+}
+
+/* SIGN UP */
+.signup-wrap {
+    background-color: #ffbf00;
+    width: 100vw;
+    height: 100vh;
+}
+.signup-container {
+    background-image: url('');
+    width: 21%;
+    height: 75%;
+    background-color: black;
+    border-radius: 1.25rem !important;
     display: flex;
     align-items: center;
+}
+.content-wrap {
+    background-color: blue;
+    /* margin: 100%; */
+    margin: auto;
+    align-items: center;
+}
+.signup-form-container {
+    margin: auto;    
+    background-color: tomato;
+    /* width: 100%; */
 }
 .greeting-text {
     font-weight: 700;
     text-align: center;
-}
-.form-container {
-    margin: auto;    
-    /* background-color: tomato; */
-    width: 80%;
 }
 .sign-up-btn, .log-in-btn {
     border: solid 2px #404040;
@@ -156,7 +181,7 @@ body {
 }
 .total-amount {
     /* background-color: violet; */
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .custom-graph-icon {
     color: #ffbf00;
@@ -181,11 +206,17 @@ body {
 }
 .line-chart {
 background-color:#ffbf00;
-min-height: 50px;
+min-height: 150px;
+min-width: 130px;
 border-radius: 1.25rem;
 }
 .circle-chart {
 background-color: #fff;
-min-height: 50px;
+min-height: 100px;
+min-width: 130px;
 border-radius: 1rem;
+}
+.custom-btn {
+    text-align: center;
+    border-radius: 1.25rem;
 }
