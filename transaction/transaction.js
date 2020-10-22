@@ -8,7 +8,7 @@ const dailyTransactions = [
     // {id:5,transactionType : 'commision', channel: 'mobile banking', branch: ' atm', remark: 'grocceries', amount: 4000, transfer: 'credit'},
     // {id:6,transactionType : 'transaction between customers', channel: 'mobile banking', branch: ' e-channel', remark: 'schools fees', amount: 1200, transfer: 'debit', date: 'sept 2020,1:30'},
     // {id:7,transactionType : 'commision', channel: 'ussd', branch: ' e-channel', remark: 'recovery charge', amount: 200, transfer: 'debit'},
-]
+];
 
 
 const getAllDialyTransaction = () => {
@@ -27,6 +27,20 @@ const getAllDialyTransaction = () => {
     })
 
 }
+
+const getTotalBalance = () => {
+    var totalBalanceVal = document.getElementById('total-balance');
+    totalBalanceVal.innerHTML = "";
+    const totalValue = dailyTransactions.reduce((accum, curInd) => {
+        console.log('amt is:',curInd.amount);
+        return accum + curInd.amount;
+    }, 0);
+    return (
+        totalBalanceVal.innerHTML += `<p class="total-amount" id="total-balance">N${totalValue}</p>`
+    )
+}
+
+console.log(getTotalBalance());
 
 getAllDialyTransaction();
 
