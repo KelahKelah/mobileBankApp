@@ -9,21 +9,24 @@
         <!-- BOOTSRAP CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-    
+                        <!-- <ion-icon name="wallet-sharp">Wallet</ion-icon> -->
+                        <!-- <ion-icon name="send-sharp">Send money</ion-icon> -->
+                        <!-- <ion-icon name="card-sharp">atm card</ion-icon> -->
     </head>
     <body>
-        <div class="transaction-wrap">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+        <div class="transaction-wrap"> 
             <div class="transaction-container">
                 <div class="transaction-content">
+                   <p class="m-0"><ion-icon name="menu-sharp" class="menu-icon px-3" onclick="menuClick()"> Menu</ion-icon></p> 
+
                     <div class="Total-balance"> 
-                        <p class="customer-name">Kelechi</p>
                         <ion-icon name="pulse-sharp" class="custom-graph-icon"></ion-icon>
                         <label class="total-balance-write-up">Total Balance</label>
-                        <p class="total-amount" id="total-balance"> </p>
+                        <p class="total-amount mb-0 m-0" id="total-balance"> </p>
                     </div>
-                    <div class="custom-btn-group py-3">
+                    <div class="custom-btn-group">
                         <button type="button" class="custom-btn-parent">Card</button>
-                        <button type="button" class="custom-btn-child py-2.5"></button>
+                        <button type="button" class="custom-btn-child"></button>
                     </div>
 
                     <div class="custom-graph-card">

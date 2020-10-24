@@ -55,3 +55,8 @@ const myUsername = () => {
 }
 
 myUsername();
+
+menuClick = () => {
+    console.log('displayed');
+    document.getElementById('menuId').style.display = 'block';
+}
