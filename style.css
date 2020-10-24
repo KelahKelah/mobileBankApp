@@ -48,13 +48,26 @@ body {
 }
 .login-content-wrap {
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
 }
 .login-form-container {
     margin: auto;    
-    background-color: tomato;
+    /* background-color: tomato; */
     width: 90%;
 }
+.greeting-text {
+    font-weight: 700;
+    font-size: 1.7em;
+    text-align: center;
+    color: #2d3339;
+}
+.greeting-text-child {
+    font-weight: 400;
+    font-size: 1.3em;
+    text-align: center;
+    color:#161b1d;
+}
+
 
 /* SIGN UP */
 .signup-wrap {
@@ -63,7 +76,6 @@ body {
     height: 100vh;
 }
 .signup-container {
-    background-image: url('');
     width: 21%;
     height: 75%;
     background-color: black;
@@ -72,20 +84,17 @@ body {
     align-items: center;
 }
 .content-wrap {
-    background-color: blue;
+    /* background-color: blue; */
     /* margin: 100%; */
     margin: auto;
     align-items: center;
 }
 .signup-form-container {
     margin: auto;    
-    background-color: tomato;
+    /* background-color: tomato; */
     /* width: 100%; */
 }
-.greeting-text {
-    font-weight: 700;
-    text-align: center;
-}
+
 .sign-up-btn, .log-in-btn {
     border: solid 2px #404040;
     background-color: #404040;
@@ -108,7 +117,13 @@ body {
 }
 .custom-auth-btn {
     border-radius: 1.25rem !important;
+    background-color: blue;
 }
+/* .custom-auth-btn:hover {
+    background-color: transparent;
+
+} */
+
 /* AUTH STYLE ENDS */
 
 /* TRANSACTION STYLE  */
@@ -129,10 +144,16 @@ body {
     background-color: black;
     border-radius: 1.25rem !important;
 }
+.menu-icon {
+    color: #fff;
+    font-size: 1.7em;
+    cursor: pointer;
+}
 .Total-balance {
     color: #fff;
     text-align: center;
 }
+
 .custom-btn-group {
     text-align: center;
     /* background-color: pink ; */
@@ -205,18 +226,37 @@ body {
     justify-content: space-around;
 }
 .line-chart {
-background-color:#ffbf00;
-min-height: 150px;
-min-width: 130px;
-border-radius: 1.25rem;
+    background-color:#ffbf00;
+    /* min-height: 150px; */
+    min-width: 130px;
+    border-radius: 1.25rem;
 }
 .circle-chart {
-background-color: #fff;
-min-height: 100px;
-min-width: 130px;
-border-radius: 1rem;
+    background-color: #fff;
+    /* min-height: 100px; */
+    min-width: 130px;
+    border-radius: 1rem;
 }
 .custom-btn {
     text-align: center;
     border-radius: 1.25rem;
 }
+
+/* SIDEBAR STYLE  */
+.sidebar-wrap {
+    background-color: pink ;
+    max-width: 20%;
+    min-height: 300px;
+    display: none;
+}
+.sidebar-ul {
+    /* background-color: blue; */
+    list-style: none;
+}
+.sidebar-ul > li {
+    border-bottom: 1px solid #e6e6ff;
+    background-color: brown;
+    color: #f1f1f1;
+    padding: 10px;
+}
+
